@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">activity finder ✨</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#favorites">Favorites</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <h1>Out of ideas?</h1>
+      <p>Let's find something fun to do!</p>
+      <p class="subtitle">
+        Tell us your vibe and we'll find your next activity.
+      </p>
+    </section>
+
+    <section class="finder">
+      <h2>Find your next activity</h2>
+
+      <label for="budget">What's your budget?</label>
+      <select id="budget">
+        <option value="any">Any budget</option>
+        <option value="free">Free</option>
+        <option value="low">Under 100 kr</option>
+        <option value="medium">100–300 kr</option>
+        <option value="high">300+ kr</option>
+      </select>
+
+      <label for="company">Who are you with?</label>
+      <select id="company">
+        <option value="any">Anyone</option>
+        <option value="alone">Just me</option>
+        <option value="friends">Friends</option>
+        <option value="date">Date</option>
+      </select>
+
+      <label for="time">How much time do you have?</label>
+      <select id="time">
+        <option value="any">Any amount of time</option>
+        <option value="short">Under 1 hour</option>
+        <option value="medium">1–3 hours</option>
+        <option value="long">All day</option>
+      </select>
+
+      <button id="generateBtn">Find my activity ✨</button>
+    </section>
+
+    <section id="result" class="result hidden"></section>
+
+    <section id="favorites" class="favorites">
+      <h2>My Favorites ♡</h2>
+      <div id="favoritesList">
+        <p>No favorites yet!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ♡ | Activity Finder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
